@@ -2,7 +2,7 @@ import 'package:mousam/services/location.dart';
 import 'package:mousam/services/networking.dart';
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
-const apiKey = '37475192c7b903217d4db549b9e007aa';
+const apiKey = '18934d88f3bebcb1f6eb7a04a0283676';
 
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {
@@ -18,8 +18,7 @@ class WeatherModel {
     NetworkHelper networkHelper = NetworkHelper(
         '$openWeatherMapURL?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
     var weatherData = await networkHelper.getData();
-    print("in weather");
-    return weatherData;
+    return weatherData; //returning json object i guess
   }
 
   String getWeatherIcon(int condition) {
@@ -43,9 +42,9 @@ class WeatherModel {
   }
 
   String getMessage(int temp) {
-    if (temp > 25) {
+    if (temp > 35) {
       return 'It\'s 🍦 time';
-    } else if (temp > 20) {
+    } else if (temp > 25) {
       return 'Time for shorts and 👕';
     } else if (temp < 10) {
       return 'You\'ll need 🧣 and 🧤';

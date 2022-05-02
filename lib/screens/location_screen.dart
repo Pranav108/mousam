@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:mousam/utilities/constants.dart';
 import 'package:mousam/services/weather.dart';

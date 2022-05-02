@@ -18,11 +18,10 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   void getLocationData() async {
-    print("in nav1");
     var weatherData = await WeatherModel().getLocationWeather();
-    print("in nav2");
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
-      return LocationScreen(locationWeather: weatherData);
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+      return LocationScreen(
+          locationWeather: weatherData); //we are passing json here
     }));
   }
 
