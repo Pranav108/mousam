@@ -14,9 +14,9 @@
 - **Flutter**
 - **Dart**
 
-## Screenshots 📸
+## Screenshots & Demo 📸
 
-<img src="/img/Screenshot1.png" width="230"/><img src="/img/Screenshot2.png" width="230"/><img src="/img/Demo.gif" width="230"/>
+<img src="/img/Screenshot1.png" width="230"/> <img src="/img/Screenshot2.png" width="230"/> <img src="/img/Demo.gif" width="250"/>
 
 ## Optimizations 📊
 
